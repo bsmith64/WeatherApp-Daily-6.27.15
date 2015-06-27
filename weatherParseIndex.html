@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Weather APP || Daily Challenge || 6.26.15</title>
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<link rel='stylesheet' href='weatherStyle.css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type='text/javascript' src="weatherScript.js"></script>
+
+</head>
+
+<body>
+
+<!-- APP TITLE -->
+<div class='container text-center' id='titleCont'>
+	<div class='row'>
+			<div class='col-md-12' id='mainheader'>Local Weather Forcast</div>
+	</div>
+</div>
+
+<!-- USER INPUT -->
+<div class='container text-center' id='mainContainer'>
+
+<div class='row'>
+			<div class='col-md-12'></div>
+	</div>
+
+	<div class='row'>
+		<div class='col-md-2'></div>
+				<div class='col-md-6'>
+					<div class='form-group'>
+						<input type='text' class='form-control' id='userZip' value='Enter a zip code'>
+					</div>
+				</div>
+
+					<div class='col-md-2'>
+						<button onclick='checkFunction()' class='btn btn-info' type'button' id='checkBtn'>Check</button>
+					</div>
+				
+			<div class='col-md-2'></div>
+	</div>
+
+</div>
+
+<!-- FEATURE CONTENT -->
+<div class='container text-center' id='featureCont'>	
+
+	<div class='row' id='featuresRowOne'>
+		<div class='col-md-6' id='featureOne'> Conditions </div>
+		<div class='col-md-6' id='featureTwo'> Temperture </div>
+	</div>
+
+	<div class='row' id='featuresRowTwo'>
+		<div class='col-md-6' id='featureThree'> Wind </div>
+		<div class='col-md-6' id='featureFour'> UV Index </div>
+	</div>
+
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
