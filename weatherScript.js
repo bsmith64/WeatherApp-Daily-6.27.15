@@ -1,6 +1,11 @@
 
 var postCode = '';
 
+function clearValue() {
+	var elem = document.getElementById('userZip');
+	elem.value = '';
+}
+
 function checkFunction() {
 		var button = document.getElementById('checkbtn');
 		var userInput = document.getElementById('userZip').value;
