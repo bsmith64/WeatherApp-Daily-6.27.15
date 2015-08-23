@@ -11,15 +11,76 @@
 
 	<link rel='stylesheet' href='weatherStyle.css'>
 
-	<link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Work+Sans:400,800' rel='stylesheet' type='text/css'>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script type='text/javascript' src="weatherScript.js"></script>
 
 </head>
 
 <body>
 
+<div class='container-fluid' id='main'>
+		
+		<div class='row' id='main_row'>
+			<div id='headerbar'>
+
+				<div class='col-md-1'></div>
+
+				<div class='col-md-3'>
+					<div class='form-group'>
+							<input onfocus='clearValue()' type='text' class='form-control' id='userZip' value='Enter a zip code'></input>
+					</div>
+				</div>
+
+				<div class='col-md-1'>
+					<button onclick='checkFunction()' class='btn btn-info' type'button' id='checkBtn'>Lookup</button>
+				</div>
+
+					<div class='col-md-2 text-center' id='day1'></div>
+					<div class='col-md-2 text-center' id='day2'></div>
+					<div class='col-md-2 text-center' id='day3'></div>
+
+				<div class='col-md-1'></div>
+			</div>
+
+				<!--
+
+				<div class='col-md-2' id='featureOne'> Conditions </div>
+				<div class='col-md-2' id='featureTwo'> Temperture </div>
+				<div class='col-md-2' id='featureThree'> Wind </div>
+				<div class='col-md-2' id='featureFour'> UV Index </div>
+
+				-->
+
+				<div class='container' id='txt_conditions'>
+					<h1 id='featureOne'> CITY </h1>
+					<h1 id='featureTwo'> WEATHER </h1>
+					<h1 id='featureThree'> TEMP </h1>
+					<h1 id='featureFour'> WIND</h1>
+				</div>
+
+		</div>
+
+
+		<!-- IMAGES -->
+		<img src='./photos/home.jpg' class='img-responsive img-center' id='bkg_img'>
+		<img src='./photos/clear.jpg' class='img-responsive img-center' id='clear_img'>
+		<img src='./photos/cloudy.jpg' class='img-responsive img-center' id='cloudy_img'>
+		<img src='./photos/part_cloudy.jpg' class='img-responsive img-center' id='part_cloudy_img'>
+		<img src='./photos/rain.jpg' class='img-responsive img-center' id='rain_img'>
+
+
+</div>
+
+
+
+<script type='text/javascript' src="weatherScript.js"></script>
+
+
+
+</body>
+</html>
+<!--
 
 <div class='container text-center'>
 	<div class='row'>
@@ -27,11 +88,11 @@
 	</div>
 </div>
 
-<!-- APP TITLE -->
+
 <div class='container text-center' id='mainContainer'>
 
 
-<!-- USER INPUT -->
+
 
 
 <div class='row'>
@@ -55,7 +116,7 @@
 
 
 
-<!-- FEATURE CONTENT -->
+
 	
 
 	<div class='row' id='featuresRowOne'>
@@ -69,9 +130,8 @@
 <p> Daily Project || Weather APP || 6.27.2015 || Blake Smith </p>
 </div>
 
+-->
 
-</body>
-</html>
 
 
 
