@@ -1,7 +1,5 @@
 
 
-
-
 var postCode = '';
 
 // IMAGES
@@ -58,14 +56,25 @@ function checkFunction() {
 		runParse();
 }
 
+$(document).ready(function() {
 
+	$('#enterForm').submit(function() {
+		runParse();
+	});
+
+});
 
 function runParse() {
+
+	var postCode = $('#userZip').val();
+	console.log(postCode);
+
 	$.ajax({
 		
 		url : "http://api.wunderground.com/api/ee2c13f577bdf0a1/geolookup/conditions/forecast/q/US/" + postCode +".json",
 		dataType : "jsonp",
 		success : function(parsed_json) {
+			console.log(parsed_json);
 			var location = parsed_json['location']['city'];
 			var temp_f = parsed_json['current_observation']['temp_f'];
 			var wind = parsed_json['current_observation']['wind_mph'];
